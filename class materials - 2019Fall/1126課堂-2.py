@@ -1,0 +1,17 @@
+f = open('1.txt','r')
+a = f.read()
+print(a)
+f.close()
+
+L=a.splitlines()
+print(L)
+for i in range(len(L)):
+    L[i]=int(L[i])
+print(max(L)*min(L))
+print(L)
+print(max(L))
+print(min(L))
+L.sort()
+print(L)
+L.sort(reverse=True)
+print(L)
